@@ -64,12 +64,12 @@ public class ModuleTest {
 
     @Test
     public void splitServiceModule() throws Exception {
-        int v = 69;
+        int v = 999;
         module.service(v,callback);
         verify(callback).returnData(data.capture());
         Data dataResponse = data.getValue();
         assertThat(dataResponse, is(notNullValue()));
-        assertThat(dataResponse.getValue(), is(60+9));
+        assertThat(dataResponse.getValue(), is(990+9));
 
     }
 
