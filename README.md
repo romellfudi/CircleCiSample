@@ -11,7 +11,7 @@ Use CircleCi Service, please create acount and register on CircleCi:
 
 When your Android/Gradle project its ready, need  register application on CircleCi. 
 
-In this tutorial we use bitbucket repository, but work similary on Github, CircleCi need a *yml file* to connect with gradle whole put on  '.circleci/':
+In this tutorial we use Github Repository, CircleCi need a *yml file* to connect with gradle whole put on  '.circleci/':
 
 > ./circleci/config.yml
 
@@ -52,7 +52,7 @@ jobs:
 ![image](snapshot/A.png#vertical)
 
 
-In the configuration of the Bitbucket, must be insured that the permissions of writing are enabled for committing immediate in the original branch
+In the configuration of the Github, must be insured that the permissions of writing are enabled for committing immediate in the original branch
 
 ![image](snapshot/B.png#center)
 
@@ -95,7 +95,7 @@ Summarizing the dashboard of circleCi, shows the following:
 
 Once test the potential of the tool we are going to see the really useful thing that we can do with Circleci, let's suppose that in our team development, then we want to assure the main branch of our repository always have a stable version, where everything developed has been proved correctly.
 
-On Bitbucket go to configure and edit branch permissions, stay blank space in 'write access' input, and uncheck or revoke all permissions for revoking directly new changes, and enable pull request task for everybody.
+On Github go to configure and edit branch permissions, stay blank space in 'write access' input, and uncheck or revoke all permissions for revoking directly new changes, and enable pull request task for everybody.
 
 ![image](snapshot/C.png#center)
 
@@ -128,7 +128,7 @@ On the CircleCi dashboard, a new record with **NOT RUN** label and the last comm
 
 ![image](snapshot/I.png#center)
 
-On Bitbucket we look the three change had a new 'BranchServiceTest' branch, builed from AndroidStudio
+On Github we look the three change had a new 'BranchServiceTest' branch, builed from AndroidStudio
 
 ![image](snapshot/J.png#center)
 
@@ -160,7 +160,7 @@ When the administrador had confirm the new implementation, procede to merge. **A
 
 ![image](snapshot/R.png#center)
 
-On Bitbucket-commits display the new auxiliar branch was remove, just only display a branch 'master' 
+On Github-commits display the new auxiliar branch was remove, just only display a branch 'master' 
 
 ![image](snapshot/S.png#center)
 

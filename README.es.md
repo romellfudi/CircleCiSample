@@ -6,7 +6,7 @@
 
 Cuando tenga listo su apllicación Android/Gradle, registrar su aplicación en circleci.com 
 
-Cuando enlacen su projecto(en este caso Bitbucket también funciona para Github), nos permitirá enlazar nuestro projecto con una configuración *.yml este debe ser colocado en una carpeta llamada '.circleci/':
+Cuando enlacen su projecto de Github, nos permitirá enlazar nuestro projecto con una configuración *.yml este debe ser colocado en una carpeta llamada '.circleci/':
 
 > ./circleci/config.yml
 ```yml
@@ -65,7 +65,7 @@ img[src*='#circleci'] {
 ![image](snapshot/A.png#vertical)
 
 
-En la configuración del bitbucket deben de estar asegurado que los permisos de escritura esten habilitados para commits inmediatos en el branch original
+En la configuración del Github deben de estar asegurado que los permisos de escritura esten habilitados para commits inmediatos en el branch original
 
 ![image](snapshot/B.png#center)
 
@@ -163,7 +163,7 @@ En el dashboard veremos como las pruebas se han ejecutado, una vez terminado vis
 
 ![image](snapshot/P.png#center)
 
-En la pantalla donde estamos del bitbucket visualizamos que hay un contador de pruebas ejecutadas, en nuestro caso como no ha detectado que los flujos de otros casos de pruebas han sido modificados, únicamente ejecutará nuestro caso de prueba 'serviceModule' de la clase ModuleTest 
+En la pantalla donde estamos del Github visualizamos que hay un contador de pruebas ejecutadas, en nuestro caso como no ha detectado que los flujos de otros casos de pruebas han sido modificados, únicamente ejecutará nuestro caso de prueba 'serviceModule' de la clase ModuleTest 
 
 ![image](snapshot/Q.png#center)
 
