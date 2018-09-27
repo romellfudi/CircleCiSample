@@ -1,4 +1,4 @@
-package fudi.freddy.circlecisample.math;
+package com.romellfudi.circlecisample.math;
 
 /**
  * @version 1.0

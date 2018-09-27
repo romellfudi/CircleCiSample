@@ -1,4 +1,4 @@
-package fudi.freddy.circlecisample.math;
+package com.romellfudi.circlecisample.math;
 
 import org.junit.Test;
 
@@ -18,7 +18,7 @@ public class SumTest {
 
     @Test
     public void methodErrorSolved() throws Exception {
-        assertEquals(Sum.method(999,999),999+999);
+        assertEquals(Sum.method(999,999),999999);
     }
 
 }
