@@ -49,27 +49,7 @@ jobs:
 
 ```
 
-<style>
-img[src*='#center'] { 
-    width:500px;
-    display: block;
-    margin: auto;
-}
-img[src*='#vertical'] { 
-    width:250px;
-    display: block;
-    margin: auto;
-}
-img[src*='#circleci'] { 
-    width:100px;
-    display: block;
-    margin: auto;
-}
-</style>
-
-
 ![image](snapshot/A.png#vertical)
-
 
 En la configuración del Github deben de estar asegurado que los permisos de escritura esten habilitados para commits inmediatos en el branch original
 
@@ -77,17 +57,21 @@ En la configuración del Github deben de estar asegurado que los permisos de esc
 
 Para hacer dinamico la prueba generamos un caso de prueba unitario erroneo:
 
-![image](snapshot/AS.png#center)
+![image](snapshot/AS.png#center) 
+
+Escribimos el respectivo commit, ahora visualizamos el repositorio y CircleCi
 
 ![image](snapshot/AT.png#center)
 
-Cuando realizamos el push el git remote, podemos visualizar que circleci comienza a ejecutar todas las pruebas 
+Creamos un nuevo branch con nuestro commit, y lo subimos al servidor
 
-![image](snapshot/AU.png#center)
+![image](snapshot/AT_U.png#center)
+
+Cuando realizamos el push el git remote, podemos visualizar que circleci comienza a ejecutar todas las pruebas 
 
 Una vez finalizado nos indicará la falla encontrada
 
-![image](snapshot/AW.png#center)
+![image](snapshot/AU.png#center)
 
 Ahora supongamos que ya resolvimos la incidencia, y las pruebas unitarias han sido corraboradas, realizamos push al git remote, en Circleci vemos que automáticamente las pruebas comezarón a ejecutarse
 
@@ -145,7 +129,7 @@ En el dasdhboard de nuestro proyecto en Circleci, veremos que hay un registro de
 
 ![image](snapshot/I.png#center)
 
-Por otro lado en nuestro árbol de cambios/commits visualizaremos la nueva rama 'BranchServiceTest', creada desde nuestro AndroidStudio
+Por otro lado en nuestro árbol de cambios/commits visualizaremos la nueva rama `test_branch`, creada desde nuestro AndroidStudio
 
 ![image](snapshot/J.png#center)
 
@@ -157,13 +141,11 @@ En el detalle debe indicar los cambios que ha relizado a alto nivel, confirmando
 
 ![image](snapshot/M.png#center)
 
-En la pantalla de pull requests se habrá añadido la solicitud para el respectivo merge
+En la pantalla de pull requests se habrá añadido la solicitud para el respectivo merge:
+
+![image](snapshot/MN.png#center)
 
 ![image](snapshot/N.png#center)
-
-Al entrar en el detalle podemos ver los cambios con sus comentarios hechos y el mensaje del desarrollador. **Debemos percatarnos de algo muy especial, tenemos un toggle button en la parte superior derecha (Approve)**. Al hacer click procederá la ejecución de los casos de pruebas en Circleci
-
-![image](snapshot/O.png#center)
 
 En el dashboard veremos como las pruebas se han ejecutado, una vez terminado visualizamos con éxito la ejecución de pruebas
 
@@ -176,10 +158,6 @@ En la pantalla donde estamos del Github visualizamos que hay un contador de prue
 En caso el administrador este conforme con  la implementación de los casos sean conforme, puede proceder al merge. **Asegurando una tasa de fiabilidad del código en todo momento** 
 
 ![image](snapshot/R.png#center)
-
-En el apartado de los commits visualizamos que ya no existe la rama auxiliar, manteniendo nuestro cambios en el branch 'master' 
-
-![image](snapshot/S.png#center)
 
 Como podemos apreciar la herramienta Circleci nos permite una gran utilidad, para la gestión y control del versionamiento de los casos de pruebas automatizados, permitiendo diversificar las tareas entre los colaboradores del proyecto donde requieran pruebas
 
@@ -208,8 +186,24 @@ Como se puede apreciar la herramienta Circleci soporta flavors de gradle, en est
 
 ![image](snapshot/V.png#center)
 
-Todos los derechos reservados de uso a la herramienta :
+Gracias por leer este tutorial
 
-[![image](snapshot/circleci.png#circleci)](https://circleci.com/)
+**2018, July**
 
-2018, July
+<style>
+img[src*='#center'] { 
+    width:500px;
+    display: block;
+    margin: auto;
+}
+img[src*='#vertical'] { 
+    width:250px;
+    display: block;
+    margin: auto;
+}
+img[src*='#circleci'] { 
+    width:100px;
+    display: block;
+    margin: auto;
+}
+</style>
