@@ -12,13 +12,13 @@ import static org.junit.Assert.*;
 public class SumTest {
     @Test
     public void method() throws Exception {
-        assertEquals(Sum.method(-2,-3),-5);
+        assertEquals(Sum.method(-2,-9),-11);
     }
 
 
     @Test
     public void methodErrorSolved() throws Exception {
-        assertEquals(Sum.method(999,999),999999);
+        assertEquals(Sum.method(999,999),999+999);
     }
 
 }
