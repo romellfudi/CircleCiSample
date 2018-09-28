@@ -8,7 +8,6 @@
 #### Author Romell Domínguez
 [![](snapshot/icono.png)](https://www.romellfudi.com/)
 
-
 Use CircleCi Service, please create acount and register on CircleCi:
 
 [![image](snapshot/circleci.png#circleci)](https://circleci.com/)
@@ -57,7 +56,6 @@ jobs:
 
 ![image](snapshot/A.png#vertical)
 
-
 In the configuration of the Github, must be insured that the permissions of writing are enabled for committing immediate in the original branch
 
 ![image](snapshot/B.png#center)
@@ -70,13 +68,15 @@ Write a error comment into commit, just only for visualize on Repository and Cir
 
 ![image](snapshot/AT.png#center)
 
-When pushed on remote repository, we can view on CircleCi dashboard, on this display show every testing, the status change on real time (**running**): 
+Create and Push a new branch with this commit
 
-![image](snapshot/AU.png#center)
+![image](snapshot/AT_U.png#center)
+
+When pushed on remote repository, we can view on CircleCi dashboard, on this display show every testing, the status change on real time `running`
 
 When finished, display one of two status failed or success. In this case show an issue
 
-![image](snapshot/AW.png#center)
+![image](snapshot/AU.png#center)
 
 Suppose we found the problem, test unit cases had been corroborated, make commit and push it, into CircleCi dashboard show automatically
 
@@ -134,7 +134,7 @@ On the CircleCi dashboard, a new record with **NOT RUN** label and the last comm
 
 ![image](snapshot/I.png#center)
 
-On Github we look the three change had a new 'BranchServiceTest' branch, builed from AndroidStudio
+On Github we look the three change had a new `test_branch` branch, builed from AndroidStudio
 
 ![image](snapshot/J.png#center)
 
@@ -148,27 +148,21 @@ On details put a message for the respective merge request and indicate close bra
 
 On our project Pull Request display a new request:
 
+![image](snapshot/MN.png#center)
+
 ![image](snapshot/N.png#center)
-
-Test manager put comments or merge directlly. **Look on upper right, a toggle button (Approve)**. Click to run test cases, then change in real time the execute
-
-![image](snapshot/O.png#center)
 
 On CircleCi dashboard, added a new record,  when run all test and passed. The record status will change. In our case 'success'
 
 ![image](snapshot/P.png#center)
 
-On the right screen display we visualize a counter of executed tests, in our case not detected that the issues of other test cases have been modified, only it will execute our test 'serviceModule' of the class ModuleTest
+On the screen display we visualize a counter of executed tests, in our case not detected that the issues of other test cases have been modified, only it will execute our test 'serviceModule' of the class ModuleTest
 
 ![image](snapshot/Q.png#center)
 
 When the administrador had confirm the new implementation, procede to merge. **Assuring a rate of reliability of the code at all time** 
 
 ![image](snapshot/R.png#center)
-
-On Github-commits display the new auxiliar branch was remove, just only display a branch 'master' 
-
-![image](snapshot/S.png#center)
 
 Since we can estimate the tool Circleci, it allows us a great usefulness, for the management and control of the versioning of the cases of tests (proofs) automated, allowing to diversify the tasks between the collaborators of the project where they need test
 
@@ -197,6 +191,8 @@ jobs: ...
 CircleCi tools supported the gradle flavors, in this project use 'SonarQube' flavor, for connect it to a base of facts of testing need it on the part of the organization:
 
 ![image](snapshot/V.png#center)
+
+Thanks for read this  Tutorial
 
 **2018, July**
 
