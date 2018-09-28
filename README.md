@@ -192,6 +192,8 @@ CircleCi tools supported the gradle flavors, in this project use 'SonarQube' fla
 
 ![image](snapshot/V.png#center)
 
+Thanks for read this  Tutorial
+
 **2018, July**
 
 

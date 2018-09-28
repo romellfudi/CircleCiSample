@@ -186,6 +186,8 @@ Como se puede apreciar la herramienta Circleci soporta flavors de gradle, en est
 
 ![image](snapshot/V.png#center)
 
+Gracias por leer este tutorial
+
 **2018, July**
 
 <style>
