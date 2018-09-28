@@ -15,10 +15,9 @@ public class SumTest {
         assertEquals(Sum.method(-2,-3),-5);
     }
 
-
     @Test
     public void methodErrorSolved() throws Exception {
-        assertEquals(Sum.method(999,999),999999);
+        assertEquals(Sum.method(999,999),999+999);
     }
 
 }

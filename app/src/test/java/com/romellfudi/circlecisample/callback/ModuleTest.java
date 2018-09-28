@@ -1,9 +1,5 @@
 package com.romellfudi.circlecisample.callback;
 
-import com.romellfudi.circlecisample.callback.Callback;
-import com.romellfudi.circlecisample.callback.Data;
-import com.romellfudi.circlecisample.callback.Module;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
@@ -14,9 +10,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
 
 /**
