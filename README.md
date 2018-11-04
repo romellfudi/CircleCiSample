@@ -4,6 +4,7 @@
 [![API](https://img.shields.io/badge/API-17%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=17) 
 [![](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/romellfudi/CircleCiSample/blob/master/LICENSE) 
 [![]( https://img.shields.io/circleci/project/github/romellfudi/CircleCiSample.svg)](https://circleci.com/gh/romellfudi/CircleCiSample/tree/master)
+[![](https://img.shields.io/badge/language-ES-blue.svg)](./README.es)
 
 #### Author Romell Domínguez
 [![](snapshot/icono.png)](https://www.romellfudi.com/)
